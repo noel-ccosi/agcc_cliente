@@ -6,7 +6,8 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ToolWin, Vcl.ComCtrls,
   Vcl.PlatformDefaultStyleActnCtrls, System.Actions, Vcl.ActnList, Vcl.ActnMan,
-  Vcl.ActnCtrls, Vcl.ActnMenus, Vcl.Menus, System.ImageList, Vcl.ImgList;
+  Vcl.ActnCtrls, Vcl.ActnMenus, Vcl.Menus, System.ImageList, Vcl.ImgList,
+  dxGDIPlusClasses, Vcl.ExtCtrls;
 
 type
   TfMenu = class(TForm)
@@ -48,6 +49,7 @@ type
     Auditoria1: TMenuItem;
     actResolucion: TAction;
     Resolucion1: TMenuItem;
+    Image1: TImage;
     procedure actArchivoExecute(Sender: TObject);
     procedure actLineaCreditoExecute(Sender: TObject);
     procedure actPerfilClienteExecute(Sender: TObject);
